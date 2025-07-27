@@ -6,19 +6,20 @@ export const Hero = component$(() => {
   const videos = [1, 2, 3, 4, 5];
   const selected = useSignal(4);
   const timeline = gsap.timeline({ paused: true });
-  const videoTimeline = gsap.timeline({ paused: true });
-  const nextVideoRef = useSignal();
-  const text = useSignal();
-  const text2 = useSignal();
+
+  const nextVideoRef = useSignal<HTMLHeadingElement | undefined>();
+  const text = useSignal<HTMLHeadingElement | undefined>();
+  const text2 = useSignal<HTMLHeadingElement | undefined>();
   const nextVideo = $(() => {
     timeline.play();
-    nextVideoRef.value.play();
   });
 
   useVisibleTask$(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const words = new SplitText(text.value, "chars");
+    const words = new SplitText(text2.value != undefined ? text2.value : null, {
+      type: "chars",
+    });
     timeline.to("#thumb", {
       ease: "power1.inOut",
       scale: 1,
@@ -34,7 +35,10 @@ export const Hero = component$(() => {
       duration: 0.5,
       stagger: 0.1,
     });
-    const words2 = new SplitText(text2.value, "chars");
+    const words2 = new SplitText(
+      text2.value != undefined ? text2.value : null,
+      { type: "cars" }
+    );
     gsap.to(words2.chars, {
       translateY: -70,
       duration: 0.5,
@@ -56,7 +60,7 @@ export const Hero = component$(() => {
 
   return (
     <section
-      class="relative text-white w-[100vw]   w-[100dvw]  h-[100vh] h-[100dvh] bg-amber-800"
+      class="relative text-white    w-[100dvw]   h-[100dvh] bg-amber-800"
       id="home"
     >
       <div class=" bg-primary">

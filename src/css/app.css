@@ -20,6 +20,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 h4 {
@@ -28,6 +29,7 @@ h4 {
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 h5 {

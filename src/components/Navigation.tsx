@@ -5,10 +5,10 @@ export const Navigation = component$(() => {
   window.scroll({
     behavior: "smooth",
   });
-  const playRef = useSignal();
+  const playRef = useSignal<HTMLHeadingElement | undefined | any>();
 
   const playMusic = $(() => {
-    if (playRef.value.play()) {
+    if (playRef.value?.play()) {
       playRef.value.stop();
     } else {
       playRef.value.play();
