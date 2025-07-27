@@ -69,6 +69,7 @@ export const Hero = component$(() => {
           class="w-full object-cover min-h-[100vh]"
           src={`videos/video${videos[selected.value]}.mp4`}
           autoplay
+          preload="auto"
           loop
           muted
         />
@@ -90,7 +91,7 @@ export const Hero = component$(() => {
           REDEFINE
         </h1>
         <h4 class="text-3xl sm:my-20 mt-20">
-          Enter the Metagame <br />
+          Enter the Meta game <br />
           Unleash the Play Economy
         </h4>
         <button class="bg-primary rounded-2xl p-2 md:px-12 py-4 font-bold mb-20 sm:mb-0 md:text-2xl">

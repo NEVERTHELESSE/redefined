@@ -114,7 +114,12 @@ export const Third = component$(() => {
       </div>
       <div class=" h-full ">
         <div class="sm:h-[calc((100%/3)-10px)] relative">
-          <img src="/images/img3.jpg" id="ball" alt="" class="h-full" />
+          <img
+            src="/images/img3.jpg"
+            id="ball"
+            alt=""
+            class="h-full object-cover"
+          />
           <div class="absolute top-0 p-5">
             <h5>Drop Ball</h5>
             <strong class="text-white sm:text-4xl font-bold ">
@@ -130,10 +135,15 @@ export const Third = component$(() => {
           loop
           autoplay
           muted
-          class="my-[15px] h-[calc((100%/3)-10px)] object-cover"
+          class="my-[15px] h-[calc((100%/3)-10px)] object-cover "
         />
         <div class="sm:h-[calc((100%/3)-10px)] relative">
-          <img src="/images/img5.jpg" alt="" id="bottom" class="h-full" />
+          <img
+            src="/images/img5.jpg"
+            alt=""
+            id="bottom"
+            class="h-full object-cover"
+          />
           <div class="absolute top-0 p-5">
             <h5>Drop Ball</h5>
             <strong class="text-white sm:text-4xl font-bold ">
