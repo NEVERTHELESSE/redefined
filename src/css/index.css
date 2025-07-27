@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "timeless";
+  src: url("/fonts/Timeless Thinkers Demo.ttf");
+}
+@font-face {
+  font-family: "crack";
+  src: url("/fonts/crack.ttf");
+}
+@font-face {
+  font-family: "taskor";
+  src: url("/fonts/taskor.ttf");
+}
+
+@theme {
+  --color-primary: #02343f;
+  --color-secondary: #f0edcc;
+  --color-tertiary: blue;
+}
+
+@utilities {
+  @apply flex justify-center items-center;
+}

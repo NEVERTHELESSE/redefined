@@ -1,0 +1,99 @@
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  /* background-color: #1d1d1f;
+  color: white; */
+}
+
+h1 {
+  font-family: "timeless", sans-serif;
+  font-size: 10rem;
+  font-weight: 1000;
+}
+
+h2 {
+  /* font-size: 7rem; */
+  margin: 2rem 0;
+  font-family: "crack", sans-serif;
+  background: url("/images/bg.jpg") center;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+}
+
+h4 {
+  font-family: "taskor", sans-serif;
+  background: url("/images/img1.jpg") 70%;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+}
+
+h5 {
+  -webkit-text-stroke: 2px;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  font-weight: bolder;
+  -webkit-text-stroke-color: white;
+}
+
+#mask {
+  width: 65rem;
+  height: 40rem;
+  background: url("/images/img4.jpg") center no-repeat;
+  background-size: cover;
+  mask-image: url("/images/new.png");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  background-position: 20%;
+}
+
+.box {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  width: 13rem;
+  height: 8rem;
+  opacity: 1;
+  margin-top: -3.5rem;
+}
+
+#shadows {
+  box-shadow: 5px 5px 10px var(--color-secondary),
+    -5px -5px 10px var(--color-secondary);
+}
+
+#opaque {
+  /* filter: blur(20px); */
+  backdrop-filter: blur(10px);
+  background: rgba(20, 100, 0, 0.397);
+  /* box-shadow: 10px 10.0px 150px green, 0px 10px 150px green; */
+}
+
+@media (max-width: 1488px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 3rem;
+  }
+}
+
+nav {
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  #mask {
+    width: 100vw;
+    height: 32rem;
+  }
+}

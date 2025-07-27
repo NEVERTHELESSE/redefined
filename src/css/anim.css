@@ -1,0 +1,12 @@
+h2 {
+  opacity: 0;
+  animation: text;
+  animation-timeline: view();
+  font-size: 5rem;
+}
+
+@keyframes text {
+  to {
+    opacity: 1;
+  }
+}
